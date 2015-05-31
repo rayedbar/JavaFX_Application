@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="root" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="cse310_lab_01.FXMLDocumentController">
+  <children>
+    <VBox prefHeight="400.0" prefWidth="600.0" spacing="20.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+      <children>
+        <Label text="WELCOME">
+          <font>
+            <Font name="System Bold" size="20.0" />
+          </font>
+        </Label>
+        <TextField id="emailField" fx:id="nameField" prefWidth="200.0" promptText="Name" />
+        <TextField id="passwordField" fx:id="sidField" prefWidth="200.0" promptText="SID" />
+        <TextField fx:id="emailField" prefWidth="200.0" promptText="Email" />
+        <PasswordField fx:id="passwordField" prefWidth="200.0" promptText="Password" />
+        <HBox minHeight="24.0" prefHeight="24.0" prefWidth="-1.0">
+          <children>
+            <Region prefHeight="24.0" prefWidth="178.0" />
+            <Region prefHeight="24.0" prefWidth="178.0" />
+            <Button alignment="BASELINE_RIGHT" onAction="#handleRegisterAction" text="Register for Course" />
+          </children>
+        </HBox>
+        <Label id="label" fx:id="loginLabel" text="Already have an account? Log In" textFill="linear-gradient(from 0.0% 0.0% to 100.0% 100.0%, 0xff0000ff 0.0%, 0x0000ffff 30.0%, 0x000000ff 100.0%)">
+          <font>
+            <Font size="16.0" />
+          </font>
+        </Label>
+      </children>
+      <padding>
+        <Insets bottom="25.0" left="25.0" right="25.0" top="25.0" />
+      </padding>
+    </VBox>
+  </children>
+  <stylesheets>
+    <URL value="@styles.css" />
+  </stylesheets>
+</AnchorPane>

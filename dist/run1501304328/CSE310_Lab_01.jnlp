@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="CSE310_Lab_01.jnlp">
+  <information>
+    <title>CSE310_Lab_01</title>
+    <vendor>Rayed</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <jfx:javafx-runtime version="2.2+" href="http://javadl.sun.com/webapps/download/GetFile/javafx-latest/windows-i586/javafx2.jnlp"/>
+  </resources>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="CSE310_Lab_01.jar" size="85229" download="eager" />
+    <jar href="lib/mysql-connector-java-5.1.31-bin.jar" size="964882" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="CSE310_Lab_01" >
+    <param name="requiredFXVersion" value="2.2+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="cse310_lab_01.CSE310_Lab_01"  name="CSE310_Lab_01" />
+  <update check="always"/>
+</jnlp>

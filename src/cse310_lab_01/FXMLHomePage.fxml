@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="290.0" prefWidth="466.0" styleClass="root" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="cse310_lab_01.FXMLHomePageController">
+  <children>
+    <VBox id="VBox" alignment="CENTER" layoutX="14.0" layoutY="14.0" prefHeight="160.0" prefWidth="438.0" spacing="5.0">
+      <children>
+        <Group id="Group" scaleX="1.0" scaleY="1.0">
+          <children>
+            <RadioButton fx:id="slot01RadioBtn" layoutX="0.0" layoutY="0.0" mnemonicParsing="false" text="Section-01    Sunday: 8:00 AM - 10:50 AM">
+              <toggleGroup>
+                <ToggleGroup fx:id="slots" />
+              </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="slot02RadioBtn" layoutX="0.0" layoutY="35.0" mnemonicParsing="false" text="Section-02    Monday: 11:00 AM - 1:50 PM" toggleGroup="$slots" />
+            <RadioButton fx:id="slot03RadioBtn" layoutX="0.0" layoutY="70.0" mnemonicParsing="false" text="Section-03    Tuesday: 2:00 PM - 4:50 PM" toggleGroup="$slots" />
+          </children>
+        </Group>
+        <Label fx:id="label" text="" textFill="RED">
+          <VBox.margin>
+            <Insets top="20.0" />
+          </VBox.margin>
+        </Label>
+        <Button fx:id="registerButton" mnemonicParsing="false" text="Register">
+          <VBox.margin>
+            <Insets top="20.0" />
+          </VBox.margin>
+        </Button>
+      </children>
+    </VBox>
+  </children>
+  <stylesheets>
+    <URL value="@styles.css" />
+  </stylesheets>
+</AnchorPane>

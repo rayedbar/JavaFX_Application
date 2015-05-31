@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="root" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="cse310_lab_01.FXMLLoginPageController">
+  <children>
+    <VBox prefHeight="400.0" prefWidth="600.0" spacing="20.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <children>
+        <TextField id="email" fx:id="emailField" prefWidth="200.0" promptText="Email" />
+        <PasswordField fx:id="passwordField" prefWidth="200.0" promptText="Password" />
+        <HBox prefHeight="28.0" prefWidth="400.0">
+          <children>
+            <Region prefHeight="28.0" prefWidth="240.0" />
+            <Button mnemonicParsing="false" onAction="#handleAdminLoginAction" text="Admin" />
+            <Region prefHeight="28.0" prefWidth="20.0" />
+            <Button mnemonicParsing="false" onAction="#handleLogInAction" text="Log In" />
+          </children>
+        </HBox>
+        <Label fx:id="prompt" prefWidth="329.0" text="" textFill="RED">
+          <font>
+            <Font size="20.0" />
+          </font>
+        </Label>
+      </children>
+      <padding>
+        <Insets bottom="100.0" left="100.0" right="100.0" top="80.0" />
+      </padding>
+    </VBox>
+  </children>
+  <stylesheets>
+    <URL value="@styles.css" />
+  </stylesheets>
+</AnchorPane>
